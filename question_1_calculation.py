@@ -8,7 +8,7 @@ def calculation(x, y):
     multiplication = x*y
     division = x/y if y != 0 else None  # To handle division by zero
     return subtraction, multiplication, division
-
+ 
 def get_numbers():
     A = float(input("Input A: "))
     B = float(input("Input B: "))    
