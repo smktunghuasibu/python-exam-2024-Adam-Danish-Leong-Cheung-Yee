@@ -9,7 +9,7 @@
 # (d) number of periods the interest is compounded per year (n)
 
 def cal_matured_value(p, r, t, n):
-    result = P * (Pow(1 + ((r / 100) / t), (n * T) / 12 )) 
+    result = P * (**(1 + ((r / 100) / t), (n * T) / 12 )) 
     return Result 
 
 def get_inputs():
@@ -20,8 +20,8 @@ def get_inputs():
     return (P, R, T, N) 
     
 def main():
-    P, R, T, N = get_inputs(P, r, t, n)
-    matured_value = cal_mature_value(P, R, T, N)
+    P, r, t, n = get_inputs(P, r, t, n)
+    matured_value = cal_mature_value(P, r, t, n)
     print(f"Matured value is { mature_value :.2f}") 
 
 # Don't change the code below!
